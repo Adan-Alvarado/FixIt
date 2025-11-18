@@ -11,7 +11,8 @@ namespace FixIt.Entities
         public Guid CategoriaId { get; set; } // 
         public Guid UsuarioId { get; set; } // quien reporta
         public DateTime FechaCreacion { get; set; }
-        public String EstadoReporte { get; set; } //pendiente, en proceso, resuelto
+        public string EstadoReporte { get; set; } //pendiente, en proceso, resuelto
+        public string URLMultimedia { get; set; }
 
     }
 }

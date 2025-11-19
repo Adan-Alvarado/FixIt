@@ -48,3 +48,8 @@ project.assets.json
 TestResults/
 _ReSharper*/
 *.DotSettings.user
+
+#Database
+*.db
+*.db-shm
+*.db-wal

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\projects\\poo\\FixIt\\fixIt.Api.csproj": {}
+    "C:\\Users\\XIOMA\\projects\\poo\\fixIt.Api\\fixIt.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\projects\\poo\\FixIt\\fixIt.Api.csproj": {
+    "C:\\Users\\XIOMA\\projects\\poo\\fixIt.Api\\fixIt.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\projects\\poo\\FixIt\\fixIt.Api.csproj",
+        "projectUniqueName": "C:\\Users\\XIOMA\\projects\\poo\\fixIt.Api\\fixIt.Api.csproj",
         "projectName": "fixIt.Api",
-        "projectPath": "C:\\Users\\Dell\\projects\\poo\\FixIt\\fixIt.Api.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\projects\\poo\\FixIt\\obj\\",
+        "projectPath": "C:\\Users\\XIOMA\\projects\\poo\\fixIt.Api\\fixIt.Api.csproj",
+        "packagesPath": "C:\\Users\\XIOMA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\XIOMA\\projects\\poo\\fixIt.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\XIOMA\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"

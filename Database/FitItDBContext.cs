@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using fixIt.Api.Entities;
+using FixIt.Entities;
 
 public class FixItDbContext : DbContext
 {
@@ -8,7 +8,5 @@ public class FixItDbContext : DbContext
     {
     }
 
-    public DbSet<Reporte> Reportes { get; set; }
-    public DbSet<Usuario> Usuarios { get; set; }
-    public DbSet<Categoria> Categorias { get; set; }
+    public DbSet<ReporteEntity> Reportes { get; set; }
 }

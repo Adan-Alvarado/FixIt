@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fixIt.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d7503abf595f9d44cf262ac0905ceae4d406ac8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b441539a782c64825ddd5b9d17d46db6c529b9bb")]
 [assembly: System.Reflection.AssemblyProductAttribute("fixIt.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fixIt.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,18 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using FixIt.Entities;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddOpenApi();
+// Agregar DbContext y la conexión
+builder.Services.AddDbContext<FixItDbContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
-
-
-app.UseHttpsRedirection();
+app.MapControllers();
 
 app.Run();
-

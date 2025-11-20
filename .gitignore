@@ -50,6 +50,7 @@ _ReSharper*/
 *.DotSettings.user
 
 #Database
+Migrations/
 *.db
 *.db-shm
 *.db-wal

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace FixIt.Entities
 {
-    public class CategoriaEntity
+    public class CategoriaEntity : BaseEntity
     {
         public string Nombre { get; set; }
         public string Urgencia { get; set; }

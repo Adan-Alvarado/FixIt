@@ -8,5 +8,7 @@ namespace FixIt.Entities
         [Column("nombre")]
         public string Nombre { get; set; }
         public string Referencia { get; set; }
+
+        IEnumerable<ReporteEntity> Reportes { get; set; }
     }
 }

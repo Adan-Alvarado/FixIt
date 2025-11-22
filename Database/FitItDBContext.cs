@@ -9,4 +9,8 @@ public class FixItDbContext : DbContext
     }
 
     public DbSet<ReporteEntity> Reportes { get; set; }
+    public DbSet<CiudadEntity> Ciudades { get; set; }
+    public DbSet<BarrioColoniaEntity> BarriosColonias { get; set; }
+    public DbSet<CategoriaEntity> Categorias { get; set; }
+
 }

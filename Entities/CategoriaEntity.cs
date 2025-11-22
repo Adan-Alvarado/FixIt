@@ -10,5 +10,8 @@ namespace FixIt.Entities
         public string Nombre { get; set; }
         public string Urgencia { get; set; }
         public string Descripcion { get; set; }
+
+        public virtual IEnumerable<ReporteEntity> Reportes { get; set; }
     }
+
 }

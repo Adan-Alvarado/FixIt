@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace FixIt.Dtos.Reportes
 {
-    public class ReporteEditDto
+    public class ReporteEditDto : ReporteCreateDto
     {
         
     }

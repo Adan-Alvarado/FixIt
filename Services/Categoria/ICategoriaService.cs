@@ -1,5 +1,3 @@
-using Fixit.Api.Dtos.Common;
-using Fixit.Api.Dtos.Categoria;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

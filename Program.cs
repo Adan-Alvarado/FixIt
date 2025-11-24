@@ -1,4 +1,4 @@
-using fixIt.Api.Services.Categoria;
+using FixIt.Api.Services.Categoria;
 using FixIt.Entities;
 using Mapster;
 using MapsterMapper;

@@ -54,6 +54,7 @@ Migrations/
 *.db
 *.db-shm
 *.db-wal
+*.docs/
 
 
 bin/

@@ -4,6 +4,7 @@ using Mapster;
 using FixIt.Mappings;
 using Scalar.AspNetCore;
 using FixIt.Services.Reportes;
+using FixIt.Api.Services.Categoria;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,7 +23,12 @@ builder.Services.AddOpenApi();
 
 // Custom Services
 builder.Services.AddScoped<IReporteService, ReporteService>();
+// Registrar tu servicio de Categorias
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+
 var app = builder.Build();
+
+
 
 if (app.Environment.IsDevelopment())
 {

@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using fixIt.Api.Dtos.Common;
 using fixIt.Api.Dtos.Categoria;
 using fixIt.Api.Dtos;

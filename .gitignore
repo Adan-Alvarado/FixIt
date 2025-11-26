@@ -58,3 +58,5 @@ Migrations/
 
 bin/
 obj/
+
+.Docs/

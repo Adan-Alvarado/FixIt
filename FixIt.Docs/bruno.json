@@ -1,9 +1,0 @@
-{
-  "version": "1",
-  "name": "FixIt.Docs",
-  "type": "collection",
-  "ignore": [
-    "node_modules",
-    ".git"
-  ]
-}

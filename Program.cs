@@ -7,6 +7,7 @@ using FixIt.Services.Reportes;
 using FixIt.Api.Services.Categoria;
 using FixIt.Api.Services.Ciudades;
 using fixIt.Api.Services.Ciudades;
+using FixIt.Services.BarrioColonia;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +30,7 @@ builder.Services.AddScoped<ICategoriaService, CategoriaService>();
 builder.Services.AddScoped<ICiudadesService, CiudadesService>();
 
 
+builder.Services.AddScoped<IBarrioColoniaService,BarrioColoniaService>();
 var app = builder.Build();
 
 

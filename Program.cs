@@ -4,6 +4,7 @@ using Mapster;
 using FixIt.Mappings;
 using Scalar.AspNetCore;
 using FixIt.Services.Reportes;
+using FixIt.Services.BarrioColonia;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,7 @@ builder.Services.AddOpenApi();
 
 // Custom Services
 builder.Services.AddScoped<IReporteService, ReporteService>();
+builder.Services.AddScoped<IBarrioColoniaService,BarrioColoniaService>();
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())

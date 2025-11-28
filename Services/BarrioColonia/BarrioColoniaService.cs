@@ -33,10 +33,10 @@ namespace FixIt.Services.BarrioColonia
         public async Task<ResponseDto<BarrioColoniaActionResponseDto>> CreateAsync(BarrioColoniaCreateDto dto)
         {
              // Mapeo de DTO → Entidad
-            var barrioColoniaEntity = _mapper.Map<ReporteEntity>(dto);
+            var barrioColoniaEntity = _mapper.Map<BarrioColoniaEntity>(dto);
 
             // Guardar en la base de datos
-            _context.Reportes.Add(barrioColoniaEntity);
+            _context.BarriosColonias.Add(barrioColoniaEntity);
             await _context.SaveChangesAsync();
 
             return new ResponseDto<BarrioColoniaActionResponseDto>
@@ -51,7 +51,7 @@ namespace FixIt.Services.BarrioColonia
         public async Task<ResponseDto<BarrioColoniaActionResponseDto>> DeleteAsync(Guid id)
         {
             // Buscar el registro a eliminar
-            var barrioColoniaEntity = await _context.Reportes.FirstOrDefaultAsync(x => x.Id == id);
+            var barrioColoniaEntity = await _context.BarriosColonias.FirstOrDefaultAsync(x => x.Id == id);
 
             if (barrioColoniaEntity is null)
             {
@@ -64,7 +64,7 @@ namespace FixIt.Services.BarrioColonia
             }
 
             // Eliminar registro
-            _context.Reportes.Remove(barrioColoniaEntity);
+            _context.BarriosColonias.Remove(barrioColoniaEntity);
             await _context.SaveChangesAsync();
 
             return new ResponseDto<BarrioColoniaActionResponseDto>
@@ -78,7 +78,7 @@ namespace FixIt.Services.BarrioColonia
 
         public async Task<ResponseDto<BarrioColoniaActionResponseDto>> EditAsync(Guid id, BarrioColoniaEditDto dto)
         {
-            var barrioColoniaEntity = await _context.Reportes.FirstOrDefaultAsync(x => x.Id == id);
+            var barrioColoniaEntity = await _context.BarriosColonias.FirstOrDefaultAsync(x => x.Id == id);
 
             if (barrioColoniaEntity is null)
             {
@@ -94,7 +94,7 @@ namespace FixIt.Services.BarrioColonia
             _mapper.Map(dto, barrioColoniaEntity);
 
             // Marca la entidad como modificada
-            _context.Reportes.Update(barrioColoniaEntity);
+            _context.BarriosColonias.Update(barrioColoniaEntity);
 
             await _context.SaveChangesAsync();
 
@@ -158,7 +158,7 @@ namespace FixIt.Services.BarrioColonia
 
         public async Task<ResponseDto<BarrioColoniaDto>> GetOneByIdAsync(Guid id)
         {
-            var barrioColoniaEntity = await _context.Reportes.FirstOrDefaultAsync(x => x.Id == id);
+            var barrioColoniaEntity = await _context.BarriosColonias.FirstOrDefaultAsync(x => x.Id == id);
 
             if (barrioColoniaEntity is null)
             {

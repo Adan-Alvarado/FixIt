@@ -21,6 +21,7 @@ namespace FixIt.Services.Reportes
         public ReporteService(FixItDbContext context, IConfiguration configuration, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
 
             // Tamaños de paginación
             PAGE_SIZE = configuration.GetValue<int>("PageSize");

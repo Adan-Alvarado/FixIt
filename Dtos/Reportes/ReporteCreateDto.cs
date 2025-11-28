@@ -5,14 +5,14 @@ namespace FixIt.Dtos.Reportes
     public class ReporteCreateDto
     {
         [Display(Name = "CategoríaId")]
-        [Range(1,10, ErrorMessage =  "La {0} de la categoría debe estar entre 1 y 10.")]
+        [Required(ErrorMessage = "La {0} es obligatoria.")]
         public Guid CategoriaId { get; set; }
 
         [Display(Name = "Barrio/ColoniaId")]
         [Required(ErrorMessage = "El {0} es obligatorio.")]
         public Guid BarrioColoniaId { get; set; }
 
-        [Display(Name = "Ciudad")]
+        [Display(Name = "CiudadId")]
         [Required(ErrorMessage = "La {0} es obligatoria.")]
         public Guid CiudadId { get; set; }
 
